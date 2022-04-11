@@ -1,6 +1,6 @@
 {
-  "name": "create-react-cli",
-  "version": "1.0.1",
+  "name": "tohsaka888-react-cli",
+  "version": "1.0.2",
   "description": "webpack5 react脚手架",
   "main": "index.js",
   "scripts": {
