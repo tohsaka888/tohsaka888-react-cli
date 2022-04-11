@@ -1,5 +1,5 @@
 {
-  "name": "webpack5-react-typescript",
+  "name": "tohsaka888-react-cli",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,6 +8,7 @@
     "build": "webpack --config ./webpack/webpack.prod.conf.js",
     "start": "webpack-dev-server --config ./webpack/webpack.dev.conf.js"
   },
+  "bin": "/cli/cli.js",
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -36,6 +37,11 @@
     "webpack-dev-server": "^4.8.1"
   },
   "dependencies": {
+    "chalk": "^4.0.0",
+    "commander": "^9.1.0",
+    "download-git-repo": "^3.0.2",
+    "inquirer": "^8.2.2",
+    "node-fetch": "2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   }
