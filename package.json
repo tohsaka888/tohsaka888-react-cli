@@ -1,17 +1,19 @@
 {
-  "name": "tohsaka888-react-cli",
-  "version": "1.0.0",
-  "description": "",
+  "name": "create-react-cli",
+  "version": "1.0.1",
+  "description": "webpack5 react脚手架",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config ./webpack/webpack.prod.conf.js",
     "start": "webpack-dev-server --config ./webpack/webpack.dev.conf.js"
   },
-  "bin": "/cli/cli.js",
+  "bin": {
+    "create-react-cli": "bin/cli.js"
+  },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "tohsaka888",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.17.9",
     "@babel/polyfill": "^7.12.1",
@@ -44,5 +46,13 @@
     "node-fetch": "2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tohsaka888/webpack5-react-typescript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tohsaka888/webpack5-react-typescript/issues"
+  },
+  "homepage": "https://github.com/tohsaka888/webpack5-react-typescript#readme"
 }

@@ -1,16 +1,5 @@
 #! /usr/bin/env node
-const inquirer = require('inquirer')
 const chalk = require('chalk')
-const promptList = [{
-  type: 'list',
-  message: '请选择一种框架',
-  name: 'framework',
-  choices: [
-    'react',
-    'react-typescript'
-  ],
-  default: 'react-typescript'
-}]
 
 
 const program = require('commander')
