@@ -8,7 +8,7 @@ program
   .option('-f,--force', '描述性文字')
   .description('创建一个新的项目')
   .action((name, options) => {
-    console.log('项目名是：', chalk.blue(name));
+    console.log('请输入项目名称：', chalk.blue(name));
     require('./create.js')(name,options)
   })
 program.parse()

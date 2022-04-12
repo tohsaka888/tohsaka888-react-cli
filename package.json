@@ -8,7 +8,7 @@
     "start": "webpack-dev-server --config ./webpack/webpack.dev.conf.js"
   },
   "bin": {
-    "create-react-cli": "bin/cli.js"
+    "tohsaka888-react-cli": "bin/cli.js"
   },
   "keywords": [
     "webpack",

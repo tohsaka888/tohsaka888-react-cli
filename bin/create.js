@@ -7,11 +7,11 @@ const chalk = require('chalk');
 const inquirer = require('inquirer')
 
 async function onDownload(name, repo) {
-  const requestUrl = `tohsaka888-react-clii/${repo}`;//创建下载地址
+  const requestUrl = `tohsaka888-react-cli/${repo}`;//创建下载地址
   const cwd = process.cwd(); //获取当前命令行选择的目录
   const targetPath = path.join(cwd, name); //模板下载所在地址
   const downloadFunc = util.promisify(downloadGitRepo);
-  downloadFunc(requestUrl, targetPath);
+  await downloadFunc(requestUrl, targetPath);
 }
 
 module.exports = async function (name, options) {
@@ -26,5 +26,5 @@ module.exports = async function (name, options) {
   await onDownload(name, repo);
   console.log(`\r\n成功创建项目 ${chalk.cyan(name)}`);
   console.log(`\r\n  cd ${chalk.cyan(name)}`);
-  console.log('  yarn start\r\n');
+  console.log('  yarn install && yarn start\r\n');
 }
