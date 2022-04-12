@@ -1,11 +1,24 @@
 import React from "react";
-import "./index.less";
+import logo from "./logo.svg";
+import "./App.less";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello React!</h1>
-      <h2>created by: Tohsaka888!!!</h2>
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.tsx</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
