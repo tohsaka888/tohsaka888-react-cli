@@ -7,7 +7,11 @@ module.exports = merge(baseConfig, {
   mode: 'production',
   optimization: {
     minimizer: [
-      new CssMinimizerWebpackPlugin()
-    ]
+      new CssMinimizerWebpackPlugin(), '...'
+    ],
+    optimization: {
+      nodeEnv: 'production',
+      usedExports: true,
+    },
   }
 })
