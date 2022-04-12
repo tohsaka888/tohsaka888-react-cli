@@ -45,13 +45,5 @@
     "@babel/runtime": "^7.17.9",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tohsaka888/webpack5-react-typescript.git"
-  },
-  "bugs": {
-    "url": "https://github.com/tohsaka888/webpack5-react-typescript/issues"
-  },
-  "homepage": "https://github.com/tohsaka888/webpack5-react-typescript#readme"
+  }
 }
