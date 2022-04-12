@@ -3,6 +3,7 @@ const downloadGitRepo = require('download-git-repo');
 const path = require('path');
 const util = require('util');
 const chalk = require('chalk');
+const figlet = require('figlet');
 
 const inquirer = require('inquirer')
 
@@ -23,8 +24,19 @@ module.exports = async function (name, options) {
     choices: repos,
     message: '请选择一个模板'
   }])
+  console.clear()
+  await figlet('tohsaka888-react-cli', function (err, data) {
+    if (err) {
+      console.log('Something went wrong...');
+      console.dir(err);
+      return;
+    }
+    console.log(chalk.redBright(data));
+  });
+  console.log('\nLoading...')
   await onDownload(name, repo);
-  console.log(`\r\n成功创建项目 ${chalk.cyan(name)}`);
-  console.log(`\r\n  cd ${chalk.cyan(name)}`);
-  console.log('  yarn install && yarn start\r\n');
+  console.clear()
+  console.log(`\n成功创建项目 ${chalk.cyan(name)}`);
+  console.log(`\ncd ${chalk.cyan(name)}`);
+  console.log('\nyarn install && yarn start\r\n');
 }
